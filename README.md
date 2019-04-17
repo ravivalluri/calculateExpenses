@@ -1,4 +1,4 @@
-# to-live-to-pay
+# Calculate Expenses
 
 > A Vue.js project
 
