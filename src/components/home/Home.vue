@@ -3,9 +3,9 @@
     <article id="home-current" class="widget">
       <section class="content">
         <p></p>
-        <p>Бюджет на сегодня:</p>
+        <p>Today's Budget</p>
         <p>{{moneyForToday}}💰</p>
-        <button v-on:click='add'>Потратить!</button>
+        <button v-on:click="add">Spending Amount</button>
         <p></p>
       </section>
     </article>
@@ -14,7 +14,7 @@
       <section class="content">
         <p>
           <span>💰</span>
-          <span>Описание</span>
+          <span>Details</span>
         </p>
 
         <p v-for="expenditure in expenses" :key="expenditure.datetime">
@@ -26,12 +26,12 @@
 
     <article id="home-other" class="widget">
       <section class="content">
-        <span v-on:click='editBudget' class="edit">⚙</span>
+        <span v-on:click="editBudget" class="edit">⚙</span>
         <article class="left">
           <p></p>
-          <p>Дневной Бюджет:</p>
-          <p>Осталось Дней:</p>
-          <p>Осталось Денег:</p>
+          <p>Daily Budget:</p>
+          <p>Days Remaining</p>
+          <p>Money Remanining</p>
           <p></p>
         </article>
         <article class="right">
@@ -47,26 +47,26 @@
 </template>
 
 <script>
-import storage from '../../services/localstorageService'
+import storage from "../../services/localstorageService";
 
 export default {
-  name: 'Home',
-  data () {
-    const [err, data] = storage.homeCalculation()
+  name: "Home",
+  data() {
+    const [err, data] = storage.homeCalculation();
 
-    if (err || data.daysToSalary < 1) this.$router.push('/new')
+    if (err || data.daysToSalary < 1) this.$router.push("/new");
 
-    return data
+    return data;
   },
   methods: {
-    add: function () {
-      this.$router.push('/add')
+    add: function() {
+      this.$router.push("/add");
     },
-    editBudget: function () {
-      this.$router.push('/new')
+    editBudget: function() {
+      this.$router.push("/new");
     }
   }
-}
+};
 </script>
 
 <style lang='scss' src='./home.component.scss'>

@@ -1,14 +1,13 @@
 {
-  "name": "To Live To Pay",
-  "short_name": "ToLiveToPay",
+  "name": "Calculate Expenses",
+  "short_name": "CalculateExpenses",
   "theme_color": "#f5fff9",
   "background_color": "#F5FFF9",
   "display": "standalone",
   "orientation": "portrait",
   "Scope": "/",
   "start_url": "/",
-  "icons": [
-    {
+  "icons": [{
       "src": "images/icons/icon-72x72.png",
       "sizes": "72x72",
       "type": "image/png"
