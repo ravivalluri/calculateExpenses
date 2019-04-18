@@ -4,63 +4,65 @@
 
 <script>
 export default {
-  name: 'App'
-}
+  name: "App"
+};
 </script>
 
 <style>
-  .col{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"/>
+.col {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
-  .col-all {
-    justify-content: space-between;
-    flex-grow: 3;
-  }
+.col-all {
+  justify-content: space-between;
+  flex-grow: 3;
+}
 
-  body {
-    background: hsl(143, 100%, 98%);
-  }
+body {
+  background: #0375b4;
+}
 
-  .widget {
-    margin: 0;
-    box-sizing: border-box;
-    padding: 0 5%;
-    height: 100%;
-  }
-  .widget.single {
-    padding: 5%;
-  }
+.widget {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0 5%;
+  height: 100%;
+}
+.widget.single {
+  padding: 5%;
+}
 
-  .content {
-    background: white;
-    height: 100%;
-    border: 2px solid hsl(143, 81%, 91%);
-    border-radius: 10px;
-  }
-  .content.single {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
+.content {
+  background: #ffce00;
+  height: 100%;
+  border: 2px solid #007849;
+  border-radius: 10px;
+}
+.content.single {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
 
-  button {
-    background: hsl(143, 100%, 98%);
-    padding: 10px;
-    border: 2px solid hsl(143, 81%, 91%);
-    border-radius: 10px;
-    font-size: 2.5vh;
-  }
+button {
+  background: #262228;
+  padding: 10px;
+  border: 2px solid #0375b4;
+  border-radius: 10px;
+  font-size: 2.5vh;
+  color: #ffce00;
+}
 
-  .left {
-    text-align: right;
-  }
+.left {
+  text-align: right;
+}
 
-  .right {
-    text-align: left;
-    padding-left: 2vw;
-  }
+.right {
+  text-align: left;
+  padding-left: 2vw;
+}
 </style>
